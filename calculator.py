@@ -48,5 +48,7 @@ btn0=Button(window,text="0",padx=5,pady=3,font=("arial",10,"bold"),command=lambd
 btne=Button(window,text="=",padx=5,pady=3,font=("arial",10,"bold"),command=lambda :action_result("=")).grid(row=5,column=2)
 btnd=Button(window,text="/",padx=6,pady=3,font=("arial",10,"bold"),command=lambda :action_click("/")).grid(row=5,column=3)
 
+label=Label(window,text="Developed by Harikrishnan.U.A").grid(row=12,column=0,columnspan=7)
+
 
 window.mainloop()
