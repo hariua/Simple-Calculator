@@ -6,6 +6,11 @@ window.configure(bg="violet")
 value=""
 txt=StringVar()
 
+def action_click(num):
+    global value
+    value = value + str(num)
+    txt.set(value)
+
 
 entry=Entry(window,textvariable=txt,bg="powderblue",bd=5).grid(columnspan=4,padx=15,pady=15)
 
