@@ -17,6 +17,12 @@ def action_result(val):
     cris=value + " = "+res
     txt.set(cris)
 
+def clear(clr):
+    global value
+    value=""
+    txt.set("")
+
+
 entry=Entry(window,textvariable=txt,bg="powderblue",bd=5).grid(columnspan=4,padx=15,pady=15)
 
 
