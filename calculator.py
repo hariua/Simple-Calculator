@@ -11,6 +11,11 @@ def action_click(num):
     value = value + str(num)
     txt.set(value)
 
+def action_result(val):
+    global value
+    res=str(eval(value))
+    cris=value + " = "+res
+    txt.set(cris)
 
 entry=Entry(window,textvariable=txt,bg="powderblue",bd=5).grid(columnspan=4,padx=15,pady=15)
 
