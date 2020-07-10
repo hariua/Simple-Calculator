@@ -12,10 +12,14 @@ def action_click(num):
     txt.set(value)
 
 def action_result(val):
-    global value
-    res=str(eval(value))
-    cris=value + " = "+res
-    txt.set(cris)
+    try:
+        global value
+        res=str(eval(value))
+        cris=value + " = "+res
+        txt.set(cris)
+    except ZeroDivisionError:
+        txt.set("Zero Division Error")
+
 
 def clear(clr):
     global value
